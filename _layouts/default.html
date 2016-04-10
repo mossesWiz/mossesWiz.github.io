@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-  <meta charset="UTF-8">
-  <title>Mosseswiz by mossesWiz</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/nrmalize.css" media="screen">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/master.css" media="screen">
-    </head>
-<body>
-    <a href="#" id="smart-menu-toggle"><i class="fa fa-bars fa-3x"></i></a>
+{% include header.html%}
   <section class="page-header">
     <h1 class="project-name">Mosseswiz</h1>
     <h2 class="project-tagline">(am still looking for a content to put here)</h2>
@@ -20,38 +6,7 @@
           <img src="images/profile/me.jpg" alt="" />
     </div>
   </section>
-  <div class="social social-desktop">
-    <a href="https://www.facebook.com/brainy.wingz"><i  class="fa fa-facebook-square fa-3x"></i></a>
-    <a href="#"><i  class="fa fa-linkedin-square fa-3x"></i></a>
-    <a href="https://github.com/mossesWiz"><i  class="fa fa-github-square fa-3x"></i></a>
-  </div>
-  <main class="main-content row">
-    <div class="nav-menu col col-2of10">
-        <ul class="nav-menu-list">
-          <li class="nav-menu-list-item"><a href="#">About Me</a></li>
-          <li class="nav-menu-list-item"><a href="#">Resume</a></li>
-          <li class="nav-menu-list-item"><a href="#">Projects</a></li>
-          <li class="nav-menu-list-item"><a href="#">Blog</a></li>
-
-        </ul>
-    </div>
-    <section class="col col-8of10">
+    {% include aside.html%}
         {{content}}
     </section>
-
-  </main>
-  <footer class="site-footer" style="clear:both;">
-      <span class="site-footer-credits">&copy <a href="#">mosseswiz</a> 2016 all right reserved</span>
-
-
-      <span>
-        <a href="https://www.facebook.com/brainy.wingz"><i class="fa fa-facebook-square fa-fw"></i></a>
-        <a href="#"><i  class="fa fa-linkedin-square fa-fw"></i></a>
-        <a href="https://github.com/mossesWiz"><i  class="fa fa-github-square fa-fw"></i></a>
-      </span>
-
-      <i class="pull-right">powered by <a href="www.github.com">github</a></i>
-  </footer>
-
-</body>
-</html>
+{% include footer.html %}
