@@ -1,0 +1,3 @@
+markdown: repcarpet
+baseurl: /
+exclude: ['README.md']
