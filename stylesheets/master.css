@@ -1,0 +1,107 @@
+/* REVIEW:
+  basic styles
+ */
+/* REVIEW: header */
+.page-header{
+  padding-top: 0!important;
+}
+#smart-menu-toggle{
+    color: white;
+    position:fixed;
+    top:.2em;
+    left:.4em;
+    z-index: 1;
+}
+
+@media screen and (min-width: 45em){
+  #smart-menu-toggle{
+    top:2em;
+    left:5em;
+  }
+}
+
+.profile-pic{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top:5;
+  right: 20px;
+  border: 2px solid white;
+}
+@media screen and (min-width: 45em){
+  .profile-pic{right: 300px; }
+  }
+
+/* REVIEW: social networks */
+.social-desktop{
+  margin-left: 2em;
+}
+.social-desktop a {
+  display: block;
+}
+@media screen and (min-width: 45em){
+  .social-desktop a{
+    float: left;
+    margin-left: 1em;
+  }
+}
+
+
+
+/* REVIEW: maain content */
+.main-content{
+  padding: 3em 2m 0;
+  margin-top: 4em;
+}
+
+/* REVIEW: nav-menu */
+.nav-menu-list{
+  list-style-type: georgian;
+}
+.nav-menu-list-item{
+  text-decoration: underline;
+}
+.nav-menu-list-item a{
+  padding: 1em;
+}
+
+.nav-menu{
+  display: none;
+  min-width: 170px;
+}
+.col{
+  float: left;
+}
+
+@media screen and (min-width: 60em){
+  .nav-menu{
+    display: block;
+  }
+.col-8of10{
+  width:80%;
+}
+.col-2of10{
+  width: 20%;
+}
+}
+
+/* REVIEW: footer */
+.site-footer{
+  text-align: center;
+}
+/* REVIEW: group styles */
+img{
+  height: 100%;
+  width: 100%;
+}
+.pull-left{
+  float: left!important;
+}
+.pull-right{
+  float: right!important;
+  color: red;
+  right:0;
+}
+.clear-fix{
+  display: table;
+}
