@@ -5,11 +5,40 @@
   <title>Mosseswiz by mossesWiz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/nrmalize.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}stylesheets/normalize.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  <link rel="stylesheet" type="text/css" href="stylesheets/master.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}stylesheets/github-light.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="{{site.baseurl}}stylesheets/master.css" media="screen">
+  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $('document').ready(function(){
+    $('#button').click(function() {
+      $('#content').toggleClass('isOpen');
+      $(this).toggleClass('active');
+    });
+
+    });
+
+  </script>
     </head>
-<body>
-    <a href="#" id="smart-menu-toggle"><i class="fa fa-bars fa-3x"></i></a>
+<body class="canvas">
+  <nav id="sidebar">
+    <ul>
+      <li><a>Home</a></li>
+      <li><a>About</a></li>
+      <li><a>Resume</a></li>
+      <li><a>Work</a></li>
+      <li><a>Blog</a></li>
+    </ul>
+  </nav>
+
+  <div id="content" class="clear-fix">
+    <div id="header">
+
+      <span id="button"></span>
+    </div>
+    <div class="ukku">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h1>
+      <h2>sit amet, consectetur adipisicing</h2>
+    </div>
